@@ -1,0 +1,42 @@
+$primary-color: red;
+$secondary-color: yelow;
+
+$font-stack: "Open Sans";
+
+@mixin easeOut {
+  transition: all 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 1.5rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  //Navbar Responsive Menu
+  .menu-btn {
+    display: block !important;
+  }
+
+  .navbar-brand {
+    margin: 0 auto;
+  }
+  .nav-item {
+    text-align: center;
+  }
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}

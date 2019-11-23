@@ -1,0 +1,368 @@
+@import "config";
+@import "menu";
+
+body {
+  font-family: $font-stack;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.homepage-upperbody {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/public/img/HomePageCaroselImg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 980px;
+  width: 100%;
+}
+
+//Navbar
+.bg-dark {
+  background-color: transparent !important;
+}
+
+nav {
+  .navbar-brand {
+    color: white;
+  }
+  a {
+    color: white;
+  }
+  .nav-item {
+    padding: 10px 80px;
+    font-size: 1.2rem;
+  }
+  .nav-link:hover {
+    opacity: 0.9;
+    color: #f18381 !important;
+  }
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #707070;
+  margin: 1px 0;
+  padding: 0;
+}
+//Following ensures that the navbar is not fixed to the top
+
+//Home Page Carosel Content
+.home-page-upper-content {
+  .container {
+    margin-top: 15%;
+    //margin: 50px auto;
+    max-width: 1500px;
+  }
+}
+.carosel-content {
+  color: white;
+  h1 {
+    font-size: 4em;
+  }
+
+  .hire-me-btn {
+    color: white;
+    width: 400px;
+    margin: 20px 10px 20px 0;
+    border: 3px solid white;
+  }
+  .hire-me-btn:hover {
+    opacity: 0.9;
+    background-color: #d99519;
+  }
+  .recent-work-btn {
+    color: white;
+    width: 400px;
+    margin: 20px 10px 20px 0;
+    border: 3px solid white;
+  }
+  .recent-work-btn:hover {
+    opacity: 0.9;
+    background-color: #721817;
+  }
+}
+
+//Social Media Icon
+.social-media-content {
+  .fab {
+    padding: 30px 40px 20px 20px;
+  }
+  .fab:hover {
+    opacity: 0.8;
+    color: #f18381;
+  }
+  .fa-linkedin {
+    color: white;
+  }
+  .fa-behance {
+    color: white;
+  }
+}
+
+//My story section
+.home-page-middle-content {
+  //background-image: url("/public/img/HomePageBackground.png");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  .container {
+    margin: 0px auto;
+    max-width: 1500px;
+  }
+  img {
+    // position: absolute;
+    // top: -20%;
+    //z-index: 1;
+    width: 100%;
+  }
+  h2 {
+    margin-top: 40px;
+  }
+}
+
+// My workflow section
+.my-workflow-section {
+  background-color: #f8f8f8;
+  margin-top: 8%;
+  padding: 30px;
+  background-size: auto;
+
+  .workflow-item {
+    margin: 40px 0;
+  }
+  h2 {
+    font-weight: bold;
+    margin-top: 0;
+  }
+}
+
+//Recent Work Sction
+.recent-work-section-btn {
+  color: white;
+  width: 300px;
+  margin: 20px 0 20px 0;
+  background-color: #721817;
+}
+.recent-work-section-btn:hover {
+  color: grey;
+  opacity: 0.9;
+}
+
+//Copyright section css
+.copyright-section {
+  background-color: #2d2b2b;
+  color: white;
+  // margin-top: 5%;
+  padding: 10px 0;
+}
+
+// //////////////////PORTFOLIO PAGE ////////////////////////////////////
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/public/img/HomePageCaroselImg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-content {
+  padding: 10% 2%;
+}
+
+.portfolio-projects {
+  padding: 50px;
+}
+#Recent-Work-Title {
+  margin: 20px 0 40px 0;
+  h2 {
+    font-weight: bold;
+  }
+}
+.projects {
+  padding: 50px;
+}
+
+////////////THIS IS WHERE CSS FOR PORTFOLIO PROJECT HOVERING BEGINS//////////
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  transform: translatey(-100px);
+  -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  padding: 10px;
+}
+
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  margin: 25% auto;
+  padding: 7px 100px;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+  background-color: #f18381;
+}
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2,
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+////////////THIS IS WHERE CSS FOR PORTFOLIO PROJECT HOVERING ENDS//////////
+
+////////////THIS IS WHERE CSS FOR CONTACT PAGE BEGINS//////////
+
+.contact-main {
+  background: url("/public/img/contact-form-background@2x.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  padding: 20px;
+}
+.contact-content {
+  padding: 50px 10px 50px 10px;
+  .contact-content-info {
+    #contact-info-title {
+      margin: 30px auto !important;
+      font-weight: bold;
+    }
+    .contact-info-item {
+      padding: 5px;
+    }
+    .fab,
+    .fas {
+      color: #721817;
+    }
+  }
+  .contact-content-form {
+    padding: 20px;
+    box-shadow: 0 0 1px #000000;
+    border-radius: 35px;
+    background-color: white;
+    #contact-form-title {
+      margin: 30px auto !important;
+      font-weight: bold;
+    }
+    .contact-form {
+      padding: 20px;
+    }
+  }
+  #contact-form-button {
+    background-color: #721817;
+    border: none;
+  }
+}
+////////////THIS IS WHERE CSS FOR CONTACT PAGE ENDS////////////
+
+@media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.menu-btn {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  display: none;
+}
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background-color: #ffffff;
+  transition: all 0.3s ease-out;
+}
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar-collapse {
+    background-color: #2d2b2b;
+  }
+  .navbar-toggler {
+    margin: 20px;
+  }
+}
