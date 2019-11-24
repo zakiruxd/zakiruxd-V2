@@ -330,7 +330,9 @@ hr {
   .navbar-collapse {
     background-color: #2d2b2b; }
   .navbar-toggler {
-    margin: 20px; }
+    margin: 20px; } }
+
+@media (max-width: 500px) {
   .hire-me-btn,
   .recent-work-btn {
-    display: block; } }
+    width: 100% !important; } }
