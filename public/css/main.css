@@ -45,7 +45,7 @@ body {
   padding: 0; }
 
 .homepage-upperbody {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/HomePageCaroselImg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/public/img/HomePageCaroselImg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -156,7 +156,7 @@ hr {
   padding: 10px 0; }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/HomePageCaroselImg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/public/img/HomePageCaroselImg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
