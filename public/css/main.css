@@ -39,13 +39,16 @@
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
 
-html,
+html {
+  width: 100%; }
+
 body {
+  font-family: "Open Sans";
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  font-family: "Open Sans"; }
+  overflow-x: hidden; }
 
 .homepage-upperbody {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/HomePageCaroselImg.jpg");
