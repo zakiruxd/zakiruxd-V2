@@ -9,7 +9,7 @@ body {
 
 .homepage-upperbody {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/public/img/HomePageCaroselImg.jpg");
+    url("img/HomePageCaroselImg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,7 +104,6 @@ hr {
 
 //My story section
 .home-page-middle-content {
-  //background-image: url("/public/img/HomePageBackground.png");
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -164,7 +163,7 @@ hr {
 // //////////////////PORTFOLIO PAGE ////////////////////////////////////
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/public/img/HomePageCaroselImg.jpg");
+    url("img/HomePageCaroselImg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -283,7 +282,7 @@ hr {
 ////////////THIS IS WHERE CSS FOR CONTACT PAGE BEGINS//////////
 
 .contact-main {
-  background: url("/public/img/contact-form-background@2x.png");
+  background: url("img/contact-form-background@2x.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 100%;
